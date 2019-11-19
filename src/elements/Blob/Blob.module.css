@@ -1,0 +1,49 @@
+.Blob-info {
+  position: absolute;
+  height: 90%;
+  z-index: -5;
+  left: -50%;
+  top: 5%;
+}
+
+.Blob-works {
+  position: absolute;
+  height: 175%;
+  top: -35%;
+  left: -10%;
+  z-index: -5;
+  transform: rotate(-90deg);
+}
+
+@media only screen and (min-width: 400px) {
+  .Blob-info {
+    left: -35%;
+    top: -5%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Blob-info {
+    left: -50%;
+    top: 5%;
+  }
+  .Blob-works {
+    height: 115%;
+    top: -5%;
+    left: -30%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .Blob-info {
+    left: -50%;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .Blob-info {
+    height: 100%;
+    left: -30%;
+  }
+}

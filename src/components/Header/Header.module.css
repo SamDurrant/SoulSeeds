@@ -1,0 +1,66 @@
+.Header {
+  background-image: url('../../assets/images/leaf.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-bottom: 5vh;
+  color: #E9EDEE;
+}
+
+.Container {
+  min-height: 100vh;
+  margin-left: 5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.PrimaryHeading {
+  width: 50%;
+  align-self: flex-start;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.HeadingBlurb {
+  width: 50%;
+  align-self: flex-start;
+  font-size: 3rem;
+  text-align: right;
+  line-height: 1.3;
+  margin: 0;
+  margin-right: 2rem;
+  align-self: flex-end;
+}
+
+@media only screen and (min-width: 600px) {
+  .Container {
+    width: 40%;
+  }
+
+  .PrimaryHeading, .HeadingBlurb {
+    width: 80%;
+    margin: 3rem 0;
+  }
+
+  .Header button {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .PrimaryHeading, .HeadingBlurb {
+    width: 90%;
+  }
+
+  .PrimaryHeading {
+    font-size: 8rem;
+  }
+
+  .HeadingBlurb {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+  }
+}

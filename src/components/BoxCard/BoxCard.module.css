@@ -1,0 +1,48 @@
+.BoxCard {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.BoxCard h3 {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 4rem 0 0 0;
+}
+
+.ImageBox {
+  width: 75%;
+  text-align: center;
+  position: relative;
+}
+
+.ImageBox img {
+  width: 100%;
+}
+
+.Pricing {
+  font-size: 3rem;
+  font-weight: 900;
+  position: absolute;
+  top: 10%;
+  right: -5rem;
+  width: 12rem;
+  height: 12rem;
+  background-image: url('../../assets/blobs/blob-shape-4.svg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BoxCard p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.Description {
+  max-width: 30rem;
+}

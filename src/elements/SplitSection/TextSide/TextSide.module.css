@@ -1,0 +1,26 @@
+.TextSide {
+  position: relative;
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.TextSide p {
+  align-self: center;
+  font-size: 2.4rem;
+  text-align: center;
+  width: 70%;
+  margin: 15vh 0;
+}
+
+.TextSide.purpose {
+  background-color: #E9EDEE;
+}
+
+@media only screen and (min-width: 800px) {
+  .TextSide p {
+    margin: 25vh 0;
+  }
+}

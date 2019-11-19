@@ -1,0 +1,15 @@
+.SplitSection {
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+}
+
+.Works {
+  background-color: #E9EDEE;
+}
+
+@media only screen and (min-width: 600px) {
+  .SplitSection {
+    flex-flow: row;
+  }
+}

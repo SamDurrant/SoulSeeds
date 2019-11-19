@@ -1,0 +1,15 @@
+.CTA {
+  width: 100vw;
+  height: 100vh;
+  background-color: #E8C82C;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CTA p {
+  font-size: 2rem;
+  max-width: 30rem;
+  text-align: center;
+}
