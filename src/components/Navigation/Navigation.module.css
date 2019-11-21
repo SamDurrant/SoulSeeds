@@ -5,17 +5,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .MenuBtn {
   border: none;
   background-color: transparent;
   font-size: 2.4rem;
+  color: #3E4A4B;
+  letter-spacing: 3px;
   text-transform: uppercase;
   margin-left: 2rem;
+  padding: .5rem;
+  cursor: pointer;
 }
 
-.Cart {
+.MenuBtn:focus {
+  outline: none;
+}
+
+.MenuBtn:focus-visible {
+  outline: 3px solid #E8C82C;
+}
+
+.CartBtn {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -25,4 +42,5 @@
   align-items: center;
   font-size: 2.4rem;
   margin-right: 2rem;
+  cursor: pointer;
 }

@@ -9,10 +9,12 @@ const boxCard = (props) => {
       <p>{props.info.subtitle}</p>
       <div className={classes.ImageBox}>
         <img src={props.info.image} alt={props.info.imageAlt}/>
-        <div className={classes.Pricing}>{props.info.price}</div>
+        <div className={classes.Pricing}>${props.info.price}</div>
       </div>
       <p className={classes.Description}>{props.info.description}</p>
-      <Button content={'order'}/>
+      <Button 
+        content={'order'} 
+        click={() => props.addToCart(props.info.title, props.info.price, 'add')}/>
     </div>
   )
 }

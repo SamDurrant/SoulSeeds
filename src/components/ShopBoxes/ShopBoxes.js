@@ -12,21 +12,29 @@ const shopBoxes = (props) => {
       subtitle: 'A single box to kickstart growth',
       image: plantWithSign,
       imageAlt: 'Small plant in a pot next to a sign that says difficult roads lead to beautiful destinations',
-      price: '$30',
+      price: '30',
       description: 'Includes one seed starter complete with care instructions and one soul starter in the form of a book.'
     },
     {
       title: 'The Forest',
-      subtitle: 'A monthly box for continued growth',
+      subtitle: 'A monthly box all year long for continued growth',
       image: plantWithSign,
       imageAlt: 'Small plant in a pot next to a sign that says difficult roads lead to beautiful destinations',
-      price: '$22',
+      price: '22',
       description: 'Includes one seed starter complete with care instructions, a ceramic pot for planting and one soul starter in the form of a book.'
     }
   ]
 
-  const sapling = <BoxCard info={boxes[0]}/>
-  const forest = <BoxCard info={boxes[1]}/>
+  const sapling = (
+    <BoxCard 
+      info={boxes[0]} 
+      addToCart={props.updateCart}/>
+  )
+  const forest = (
+    <BoxCard 
+      info={boxes[1]}
+      addToCart={props.updateCart}/>
+  )
 
   return (
     <React.Fragment>
