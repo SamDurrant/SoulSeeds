@@ -4,9 +4,22 @@ import Backdrop from '../../../elements/Backdrop/Backdrop';
 
 const menu = (props) => {
   let classList = [classes.Menu, classes.Close];
+  let lis = ['how it works', 'our boxes', 'our purpose'];
+  
+  let liClass = [classes.Hide];
   if (props.open) {
     classList = [classes.Menu, classes.Open];
+    liClass = [classes.Show]; 
   }
+  
+  let counter = 1.2;
+  let delayedLis = lis.map(navItem => {
+    let delayTimer = { transition: `all ${counter}s ease-in-out` }
+    counter += 1.2;
+
+    return <li className={liClass} style={delayTimer}><a href="/">{navItem}</a></li>
+  })
+
   return ( 
     <React.Fragment>
       <Backdrop 
@@ -16,9 +29,7 @@ const menu = (props) => {
         <h3>Soul Seeds</h3>
         <nav>
           <ul className={classes.NavigationItems}>
-            <li><a href="/">how it works</a></li>
-            <li><a href="/">our boxes</a></li>
-            <li><a href="/">our purpose</a></li>
+            {delayedLis}
           </ul>
         </nav>
       </div>

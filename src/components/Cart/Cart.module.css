@@ -4,13 +4,14 @@
   right: 0;
   z-index: 150;
   width: fit-content;
-  max-width: 65%;
+  min-width: 30rem;
   height: 100vh;
+  overflow: scroll;
   background-color: rgba(233, 237, 238, 0.98);
   color: #3E4A4B;
   font-size: 1.8rem;
   text-transform: uppercase;
-  padding: 10rem 4rem;
+  padding: 7rem 4rem;
   transition: all 0.5s ease-in-out;
 }
 

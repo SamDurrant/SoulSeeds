@@ -3,32 +3,34 @@
   top: 0;
   left: 0;
   height: 100vh;
+  min-width: 25rem;
+  overflow: scroll;
   z-index: 150;
   width: fit-content;
-  background-color: rgba(62, 74, 75, 0.98);
-  padding: 10rem 4rem 10rem 2rem;
+  background-color: rgba(135, 161, 165, 0.98);
+  padding: 7rem 4rem 0 2rem;
   transition: all 0.5s ease-in-out;
 }
 
 .Menu h3 {
   color: #E8C82C;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-.Menu nav,
 .Menu .NavigationItems {
   width: 100%;
   height: 35vh;
   list-style: none;
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-flow: column;
 }
 
 .Menu .NavigationItems li {  
   padding: 1.5rem 0;
-  flex: 1;
+  display: block;
 }
 
 .Menu .NavigationItems a:link,
@@ -37,6 +39,7 @@
   color: #E9EDEE;
   text-decoration: none;
   font-size: 1.8rem;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -52,4 +55,12 @@
 
 .Close {
   transform: translateX(-100%);
+}
+
+.Hide {
+  opacity: 0;
+}
+
+.Show {
+  opacity: 1;
 }
