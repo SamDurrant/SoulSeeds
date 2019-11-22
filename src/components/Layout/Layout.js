@@ -98,7 +98,7 @@ class Layout extends React.Component {
     let types = Object.keys(this.state.shoppingCart);
     let total = 0;
     types.forEach(boxType => {
-      total += this.state.shoppingCart[boxType].quantity * this.state.shoppingCart[boxType].subscriptionValue * this.state.shoppingCart[boxType].subscription;
+      total = this.state.shoppingCart[boxType].quantity * this.state.shoppingCart[boxType].subscriptionValue * this.state.shoppingCart[boxType].subscription;
     })
     return total;
   }
