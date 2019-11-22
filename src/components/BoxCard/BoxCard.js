@@ -14,7 +14,7 @@ const boxCard = (props) => {
       <p className={classes.Description}>{props.info.description}</p>
       <Button 
         content={'order'} 
-        click={() => props.addToCart(props.info.title, props.info.price, 'add')}/>
+        click={() => props.addToCart(props.info.title, 'add')}/>
     </div>
   )
 }

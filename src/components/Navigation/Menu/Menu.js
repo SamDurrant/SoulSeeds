@@ -13,11 +13,11 @@ const menu = (props) => {
   }
   
   let counter = 1.2;
-  let delayedLis = lis.map(navItem => {
+  let delayedLis = lis.map((navItem, i) => {
     let delayTimer = { transition: `all ${counter}s ease-in-out` }
     counter += 1.2;
 
-    return <li className={liClass} style={delayTimer}><a href="/">{navItem}</a></li>
+    return <li className={liClass} style={delayTimer} key={i}><a href="/">{navItem}</a></li>
   })
 
   return ( 

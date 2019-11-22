@@ -23,7 +23,7 @@ const cart = (props) => {
           <p>Price: <span>${box.price}</span></p>
           <button 
             className={classes.RemoveItem}
-            onClick={() => props.updateCart(boxType, box.price, 'minus')}>remove</button>
+            onClick={() => props.updateCart(boxType, 'minus')}>remove</button>
         </div>
       )
     }

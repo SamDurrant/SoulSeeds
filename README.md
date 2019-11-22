@@ -1,4 +1,10 @@
+# Soul Seeds
+A subscription-based website where users can sign up for monthly or yearly services.   
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Live Demo
+
+A live demo has been deployed on Netlify at [Snaps](https://snaps.netlify.com/)
 
 ## Available Scripts
 
@@ -37,32 +43,29 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Motivation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The concept for this project was inspired by conversations with a friend. Mostly, I really wanted to work on a few different skills.
+>### **Technical Goals**
+> 1. Create a project utilizing React. Up until this point, I had only worked on tutorials or smaller projects.
+> 2. Focus on breaking my project into components and working on identifying what makes a component.
+>### **Design Goals**
+>1. Developing the project in a more efficient manner and working on time my time management skills
+>2.  While I feel confident in my CSS skills, I wanted to work on my design skills, so I used [Misfits Market](https://www.misfitsmarket.com/) as inspiration.
+>3. Design from mobile first
+>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies
 
-### Code Splitting
+* CSS
+* React
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Features
 
-### Analyzing the Bundle Size
+* Menu and Cart both slide in from the side
+* Items can be added or removed from the cart
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Challenges
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Getting the blobs in the background to position themselves correctly, especially with window resizing.
+* Learning how to navigate a project with a larger folder structure than I am accustomed to has been a bit of a learning curve, but I do feel more confident after taking on this project.

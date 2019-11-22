@@ -53,7 +53,7 @@ class Layout extends React.Component {
     this.closeCartHandler();
   }
 
-  updateCartHandler = (type, price, maths) => {
+  updateCartHandler = (type, maths) => {
     const oldBox = this.state.shoppingCart[type];
     let updatedBoxCount;
     if (maths === 'add') {
@@ -61,7 +61,7 @@ class Layout extends React.Component {
     } else if (maths === 'minus') {
       updatedBoxCount = parseInt(oldBox.quantity) - 1;
     }
-    const updatedBoxPrice = updatedBoxCount * parseInt(price);
+    const updatedBoxPrice = updatedBoxCount * oldBox.subscriptionValue;
     let updatedBoxes = {
       ...this.state.shoppingCart
     }
