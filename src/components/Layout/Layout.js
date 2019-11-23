@@ -55,33 +55,31 @@ class Layout extends React.Component {
 
   updateCartHandler = (type, maths) => {
     const oldBox = this.state.shoppingCart[type];
+    const oldTotalItems = this.state.totalItems;
+
     let updatedBoxCount;
+    let updateTotalItems;
+
     if (maths === 'add') {
       updatedBoxCount = parseInt(oldBox.quantity) + 1;
+      updateTotalItems = oldTotalItems + 1;
     } else if (maths === 'minus') {
       updatedBoxCount = parseInt(oldBox.quantity) - 1;
+      updateTotalItems = oldTotalItems - 1;
     }
-    const updatedBoxPrice = updatedBoxCount * oldBox.subscriptionValue;
+    const updatedBoxPrice = updatedBoxCount * oldBox.subscriptionValue * oldBox.subscription;
     let updatedBoxes = {
       ...this.state.shoppingCart
     }
     updatedBoxes[type].quantity = updatedBoxCount;
     updatedBoxes[type].price = updatedBoxPrice;
 
-    const oldTotalItems = this.state.totalItems;
-    let updateTotalItems;
-    if (maths === 'add') {
-      updateTotalItems = oldTotalItems + 1;
-    } else if (maths === 'minus') {
-      updateTotalItems = oldTotalItems - 1;
-    }
-
     let updatedItems = {
       ...this.state.totalItems
     }
     updatedItems = updateTotalItems;
 
-    const updatedTotalPrice = this.calculateTotal(oldBox);
+    const updatedTotalPrice = this.calculateTotal(updatedBoxes);
     let updatedTotal = {
       ...this.state.totalPrice
     }
@@ -94,11 +92,12 @@ class Layout extends React.Component {
     });
   }
 
-  calculateTotal = () => {
-    let types = Object.keys(this.state.shoppingCart);
+  calculateTotal = (boxes) => {
+    console.log(boxes)
+    let types = Object.keys(boxes);
     let total = 0;
     types.forEach(boxType => {
-      total = this.state.shoppingCart[boxType].quantity * this.state.shoppingCart[boxType].subscriptionValue * this.state.shoppingCart[boxType].subscription;
+      total += boxes[boxType].quantity * boxes[boxType].subscriptionValue * boxes[boxType].subscription;
     })
     return total;
   }
