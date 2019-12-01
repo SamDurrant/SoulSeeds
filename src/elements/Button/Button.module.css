@@ -6,6 +6,7 @@
   padding: .5rem;
   background-color: #E8C82C;
   border: 2px solid #3E4A4B;
+  box-shadow: 1px 3px 6px 0px rgba(62,74,75,0.5);
   font-family: 'Crimson Text', serif;
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -16,6 +17,11 @@
 
 .Button:hover {
   background-color: #FFF5C6;
+}
+
+.Button:active {
+  transform: translateY(3px);
+  box-shadow: 1px 0px 3px 0px rgba(62,74,75,0.5);
 }
 
 .Button:focus {

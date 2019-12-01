@@ -39,7 +39,7 @@ const shopBoxes = (props) => {
   return (
     <React.Fragment>
       <Heading content={'Our Boxes'} />
-      <SplitSection className={classes.shopBoxes}>
+      <SplitSection id={'ourboxes'} className={classes.shopBoxes}>
       { sapling }
       { forest }
       </SplitSection>

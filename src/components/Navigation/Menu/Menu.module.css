@@ -31,22 +31,20 @@
 .Menu .NavigationItems li {  
   padding: 1.5rem 0;
   display: block;
-}
-
-.Menu .NavigationItems a:link,
-.Menu .NavigationItems a:visited {
   display: block;
   color: #E9EDEE;
-  text-decoration: none;
   font-size: 1.8rem;
   font-weight: 900;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.Menu .NavigationItems a:hover,
-.Menu .NavigationItems a:active {
+.Menu .NavigationItems li a {
+  transition: all .3s ease-in-out;
+}
+
+.Menu .NavigationItems li a:hover {
   color: #E8C82C;
-  font-weight: 900;
 }
 
 .Open {

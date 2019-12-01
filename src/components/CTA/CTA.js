@@ -3,6 +3,7 @@ import Heading from '../../elements/Heading/Heading';
 import Button from '../../elements/Button/Button';
 import classes from './CTA.module.css';
 import blob from '../../assets/blobs/blob-shape-4.svg';
+import {Link} from 'react-scroll';
 
 class CTA extends React.Component {
   state = {
@@ -41,6 +42,11 @@ class CTA extends React.Component {
       top: top,
       left: left
     }
+    let content = (
+      <Link 
+        to={'ourboxes'} 
+        smooth={true}>Get Growing</Link>
+    )
 
     return (
       <section 
@@ -57,7 +63,7 @@ class CTA extends React.Component {
         </div>
         <Heading content={'Get Started'}/>
         <p>make the time to make change happen. Wake up, water your plants and feed your soul.</p>
-        <Button content={'Get Growing'}/>
+        <Button content={content}/>
       </section>
     )
   }

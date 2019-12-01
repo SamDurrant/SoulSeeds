@@ -122,8 +122,8 @@ class Layout extends React.Component {
           <Header/>
           <Info/>
           <HowItWorks/>
-          <ShopBoxes updateCart={this.updateCartHandler}/>
-          <Purpose/>
+          <ShopBoxes id={'ourboxes'} updateCart={this.updateCartHandler}/>
+          <Purpose id={'ourpurpose'}/>
           <CTA/>
         </main>
       </React.Fragment>

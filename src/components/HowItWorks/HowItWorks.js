@@ -9,7 +9,7 @@ import image from '../../assets/images/essentialism-book.jpg';
 
 const howItWorks = (props) => {
   return (
-    <SplitSection>
+    <SplitSection id={'howitworks'}>
       <ImageSide
         section={'works'}
         image={image}

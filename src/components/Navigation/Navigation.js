@@ -9,7 +9,7 @@ const navigation = (props) => {
         onClick={props.toggleMenuClicked}>menu</button>
       <div 
         className={classes.CartBtn} 
-  onClick={props.toggleCartClicked}>{props.cartItems}</div>
+        onClick={props.toggleCartClicked}>{props.cartItems}</div>
     </nav>
   )
 }

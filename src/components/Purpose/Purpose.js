@@ -7,7 +7,7 @@ import image from '../../assets/images/plant-in-pot.jpg';
 
 const purpose = (props) => {
   return (
-    <SplitSection>
+    <SplitSection id={'ourpurpose'}>
       <TextSide section={'purpose'}>
         <Heading content={'Our Purpose'} />
         <p>We want everyone to be their best self. Change happens incrementally over time, often growing from a small and unassuming seed. Our goal is to be that seed and ignite a waking within each and every one of you.</p>
