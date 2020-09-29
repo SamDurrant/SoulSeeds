@@ -11,5 +11,6 @@
 @media only screen and (min-width: 600px) {
   .SplitSection {
     flex-flow: row;
+    justify-content: center;
   }
 }

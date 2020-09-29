@@ -1,0 +1,79 @@
+.Checkout {
+  background-color: #E9EDEE;
+  color: #3E4A4B;
+  min-height: 100vh;
+  padding-top: 6rem;
+}
+
+.CheckoutInfo {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+.CheckoutInfo h3 {
+  font-size: 20px;
+  margin: 6rem auto 2rem;
+}
+
+.CheckoutInfo fieldset {
+  margin: 2rem auto;
+  width: fit-content;
+  border: none;
+}
+
+.CheckoutInfo label {
+  display: block;
+  font-size: 20px;
+}
+
+.CheckoutInfo input {
+  display: block;
+  height: 35px;
+  width: 200px;
+  border: 1px solid #3E4A4B;
+  margin-bottom: 2rem;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Crimson Text', serif;
+  color: #3E4A4B;
+  transition: all .3s ease-in;
+}
+
+.CheckoutInfo input:focus {
+  outline: 2px solid #E8C82C;
+}
+
+.CheckoutCard img {
+  max-width: 200px;
+  display: block;
+  margin: 4rem auto;
+}
+
+.CheckoutCardInfo {
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+}
+
+.AccountForm,
+.ShipForm {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.SignIn {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 2rem auto;
+}
+
+.SignIn a {
+  text-decoration: none;
+  border-bottom: 1px solid #3E4A4B;
+  font-style: italic;
+  color: #3E4A4B;
+  display: inline-block;
+  margin-left: 1rem;
+  line-height: 1.2;
+}
